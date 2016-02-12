@@ -1,5 +1,7 @@
 # ITU Turkish NLP Pipeline Caller
- A tool for using [ITU Turkish NLP Pipeline API](http://tools.nlp.itu.edu.tr/)
+ A command-line tool for using [ITU Turkish NLP Pipeline API](http://tools.nlp.itu.edu.tr/)
+ 
+[![Build Status](https://travis-ci.org/ferittuncer/ITU-Turkish-NLP-Pipeline-Caller.svg?branch=master)](https://travis-ci.org/ferittuncer/ITU-Turkish-NLP-Pipeline-Caller)
 
 For details of the pipeline, please check the pipeline page and the sources below.
 
@@ -19,11 +21,11 @@ The tool reads the token from `pipeline.token` file(under the same directory wit
 reads input file <filename>, prints the output under `./pipeline_caller_output/output<%system_time>`
 
 You can select the pipeline tool by using -t option
-`pipeline.caller.py filename -t PipelineNoisy`
-default is "PipelineFormal"
+`pipeline.caller.py filename -t <tool name>`
+default is "pipelineNoisy"
 
 You can force the encoding for I/O by using -e option
-`pipeline.caller.py filename -e UTF-8`
+`pipeline.caller.py filename -e <encoding>`
 default is your system locale
 
 And you can change the output directory by using -o option
